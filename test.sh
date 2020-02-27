@@ -1,19 +1,18 @@
 #!/usr/bin/env bash
 
-# ======== [ hazardous code ] ========
 #  ███████╗ ██╗  ██╗ ██╗   ██╗ ██╗ shreveport's 
 #  ██╔════╝ ██║  ██║ ██║   ██║ ██║ helper for
 #  ███████╗ ███████║ ██║   ██║ ██║ verifying 
 #  ╚════██║ ██╔══██║ ╚██╗ ██╔╝ ██║ lstart time 
 #  ███████║ ██║  ██║  ╚████╔╝  ███████╗ 
 #  ╚══════╝ ╚═╝  ╚═╝   ╚═══╝   ╚══════╝
-# =======[ https://ha.zardo.us ]========
 
 
 
 
 # https://jonalmeida.com/posts/2013/05/26/different-ways-to-implement-flags-in-bash/
 
+# wound up not using this code, but i left the url where i found it above
 
 # grab token from local environment
 SHVL_TOKEN=$(cat /home/$USER/.secrets/tbtoken-1)

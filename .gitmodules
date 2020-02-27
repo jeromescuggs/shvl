@@ -1,0 +1,3 @@
+[submodule "html-vault"]
+	path = html-vault
+	url = https://github.com/derhuerst/html-vault

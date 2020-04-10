@@ -1,1 +1,4 @@
 
+[submodule "html-vault"]
+	path = html-vault
+	url = https://github.com/dividuum/html-vault

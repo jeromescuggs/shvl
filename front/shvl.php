@@ -1,20 +1,23 @@
-<?php
+<?php 
 
-// Database file, i.e. file with real data
-$data_file = 'shvldb.txt';
+// db location
+$shvldata = 'shvldb.txt';
 
-// Database definition file. You have to describe database format in this file.
-// See flatfile.inc.php header for sample.
-$structure_file = 'shvldb.def';
+// check for above, and then 
+if (file_exists($shvldata)) {
+// read file into array 
+    foreach (file($shvldata) as $line); 
+	    $arr = explode('|', $line); 
 
-// Fields delimiter
-$delimiter = '|';
+//run through array and grab phone numbers
+	$data = [
+		'First'    => $arr[0],
+		'Last'     => $arr[1],
+		'Phone'    => $arr[2], 
+        'Active'   => $arr[3], 
+		'Comment'  => $arr[4], 
+	];
 
-// Number of header lines to skip. This is needed if you have some heder saved in the 
-// database file, like comment or description
-$skip_lines = 0;
-
-// run flatfile manager
-include ('engine.php');
+	echo $arr[2]; 
 
 ?>

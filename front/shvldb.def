@@ -1,0 +1,5 @@
+Last,TEXT,30:1
+First,TEXT,30:1
+Phone,STRING,11
+Active,LOGICAL,1,Y:N
+Comments,TEXT,30:2
